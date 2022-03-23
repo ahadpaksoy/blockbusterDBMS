@@ -1,4 +1,4 @@
-# iliskisel sema
+# Reletional Schema
 
 actor(actor_id: int, first_name: varchar, last_name: varchar,last_update: timestamp without timezone)
 
