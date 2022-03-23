@@ -36,7 +36,9 @@ namespace WinFormsApp1
             command1.Parameters.AddWithValue("@p8", textRating.Text);
             command1.Parameters.AddWithValue("@p9", dateLastUpdate.Value);
             command1.ExecuteNonQuery();
+            
             baglanti.Close();
+            
             MessageBox.Show("Film successfully added!");
         }
 
@@ -58,6 +60,7 @@ namespace WinFormsApp1
         private void button1_Click(object sender, EventArgs e)
         {
             string query = "SELECT * FROM film";
+            
             NpgsqlDataAdapter da = new NpgsqlDataAdapter(query, baglanti);
             DataSet ds = new DataSet();
             da.Fill(ds);
@@ -137,7 +140,9 @@ namespace WinFormsApp1
             command3.Parameters.AddWithValue("@p8", dateLastUpdate.Value);
             command3.Parameters.AddWithValue("@p9", int.Parse(film_id.Text));
             command3.ExecuteNonQuery();
+            
             baglanti.Close();
+            
             MessageBox.Show("Film successfully updated!");
         }
 
