@@ -1,7 +1,5 @@
 # 🎥blockbusterDBMS
 
-📚SAU DATA BASE MANAGEMENT SYSTEMS ASSIGMENT
-
 ## 🕸️Reletional Schema
 
 actor(actor_id: int, first_name: varchar, last_name: varchar,last_update: timestamp without timezone)
