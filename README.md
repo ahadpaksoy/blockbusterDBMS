@@ -133,15 +133,4 @@ The README lists the core tables (field names/types abbreviated below). **Note:*
 * **WinForms cannot connect** → verify the connection string (host, db, user, password, port) and that PostgreSQL accepts TCP connections (`pg_hba.conf`).
 * **Typos in column names (`lenght`, `intventory`)** → either keep them as-is (to match the DDL) or rename consistently in both DB and app code with a migration.
 
----
-
-## Roadmap (suggested)
-
-* Add **primary keys, foreign keys, and indexes** explicitly if not already in `blockbusterDB.sql`.
-* Provide a **seed script** and a **minimal CRUD form** wired to a few key tables (e.g., Film, Actor, Inventory).
-* Add **Docker Compose** (PostgreSQL + Adminer/pgAdmin) for one-command spin-up.
-* Replace typos in schema (`lenght` → `length`, `intventory` → `inventory_id`, etc.) with a migration and update references.
-* Publish a **diagram** (ERD) under `/docs/` or `iliskisel_sema.md` and link it from this README.
-
-
 [1]: https://github.com/ahadpaksoy/blockbusterDBMS "GitHub - ahadpaksoy/blockbusterDBMS: This is a mockup version of a movie rental companys rdbms"
